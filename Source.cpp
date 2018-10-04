@@ -162,14 +162,14 @@ bool checkFreeCells() {
 
 int main() {
 	startData();
-	printArr();
+	printData();
 	while (1) {
 		cout << "Step first gamer " << endl;
 		int a;
 		cin >> a;
 		gameStep(a, 'X');
 		system("cls");
-		printArr();
+		printData();
 		cout << endl << endl;
 		if (checkWin('X')) {
 			cout << "first gammer win";
@@ -180,7 +180,7 @@ int main() {
 		cin >> a;
 		gameStep(a, '0');
 		system("cls");
-		printArr();
+		printData();
 		cout << endl << endl;
 		if (checkWin('0')) {
 			cout << "second gammer win";
